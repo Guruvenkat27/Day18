@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            padding: 5px;background-image: linear-gradient(rgba(0, 0, 0, .7),rgba(0, 0, 0, .7));
+            
+        }
+        nav{
+            border: 2px solid gray;
+            height: 9vh ;
+            border-radius: 30px ;
+            position: fixed;
+            width: 96.9%;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            justify-content: space-between;
+        background-image: linear-gradient(45deg, black, rgba(0, 128, 0, 0.792), black) ;
+        }
+        .logo{
+            font-size: 30px;
+            position: relative;
+            left: 39px;
+            color: aliceblue;
+            cursor: pointer;
+        }
+        .more{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            left: -90px;
+            display: flex;
+            gap: 100px;
+            position: fixed;
+            left: 70%;
+        }
+        li{
+            list-style: none;
+     
+          
+        }
+button{
+    border: none;
+    padding-bottom: 6px ;
+  
+}
+a{
+    text-decoration: none;
+position: relative;
+left: 20px;
+color: aliceblue;
+
+}
+a:after{
+    content: '';
+    position: absolute;
+    background-color: aqua;gh
+    width: 0;
+height: 3px;
+left: 0;
+top: 23px;transition: .4s linear;
+}
+a:hover:after{
+    width: 100%;
+
+}
+
+     section{
+        border: 2px solid transparent;
+        height: 89vh;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        overflow: hidden;
+        width: 98.5%;
+        gap: 20px;
+        top: 9%;
+     }
+     img{
+        width:400px;
+         height:400px;position: relative;
+         left: -20%;
+         animation: move 2s linear infinite ;
+         animation-iteration-count: 1;
+      
+     }
+     img:nth-child(2){
+        width:230px;
+        height:230px;
+        position: relative;
+       
+top: 20%;
+
+        animation: movej 2s linear infinite ;
+      animation-iteration-count: 1;
+     }
+    
+     @keyframes move{
+        0%{
+            transform: translateX(0);
+        }
+        20%{
+            transform: translateX(100px);
+        }
+        40%{
+            transform: translateX(300px);
+        }
+        60%{
+            transform: translateX(400px);
+        }
+        80%{
+            transform: translateX(600px);
+        }
+        100%{
+          
+        }
+        
+     }
+     @keyframes movej{
+        0%,100%{
+            transform: translateX(0px);
+           
+           
+        }
+        90%{
+            transform: translateX(550px);
+        }
+        100%{
+      opacity: 0;
+        }
+     }
+     .house{
+        border: 2px solid gray;
+        height: 150px;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+       background-color: rgba(0, 0, 0, 0.477);
+        width: 8%;
+        position: relative;
+        top: 28%;
+        overflow: hidden;
+        left: 5px;
+     }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">TRANSITION</div>
+        <div class="more">
+          <li><a href="">HOME</a></li>
+          <li><a href="">CONTACT</a></li>
+          <li><a href="">ABOUT</a></li>
+        </div>
+    </nav>
+    <section>
+      <img src="./Picsart_24-03-06_15-49-12-906.png" alt="" >
+      <img src="./jer.png" alt="">
+      <div class="house"></div>
+    </section>
+</body>
+</html>

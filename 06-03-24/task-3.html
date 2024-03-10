@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            min-height: 90vh;
+        }
+        span{
+            font-size: 50px;
+        }
+        span:nth-child(odd){
+            animation: up 2s linear infinite ;
+        }
+      
+    
+        @keyframes up{
+100%{
+    transform: translateY(-100px);
+   
+
+    color: green;
+}
+        }
+        span:nth-child(even){
+            animation: down 2s linear infinite ;
+        }
+        @keyframes down{
+100%{
+    transform: translateY(100px);
+    color: aqua;
+}
+        }
+    </style>
+</head>
+<body>
+<span>G</span><span>O</span><span>O</span><span>G</span><span>L</span><span>E</span>
+</body>
+</html>

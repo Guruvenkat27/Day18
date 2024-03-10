@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card rotate</title>
+    <style>
+        
+        section{
+            border: 2px solid transparent;
+            height: 96vh;
+            width: 99%;
+       display: flex;
+           align-items: center;
+           justify-content: center;
+        }
+        .box
+        {
+            border: 2px solid transparent;
+           height: 50vh;
+           width: 70%;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           gap: 10%;
+        }
+        .b1{
+            border: 2px solid transparent;
+          position: absolute;
+          width: 17%;
+          box-shadow: 8px 10px 20px gray;
+          left: 20%;
+          cursor: pointer;
+          height: 50%;
+          transform-style: preserve-3d;
+          transition: all .5s ease;
+         
+        }
+        .b2{
+            border: 2px solid transparent;
+          position: absolute;
+          left: 50%;
+          width: 19%;
+          box-shadow: 8px 10px 20px gray;
+          height: 50%;
+          transform-style: preserve-3d;
+          transition: all .5s ease;
+        cursor: pointer;
+        }
+        .front{
+            position: absolute;
+            width: 100%;
+            background-image: url('./ironman2_lob_crd_01_4.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 336px 420px;
+            height: 100%;
+            backface-visibility: hidden;
+           
+            color: blue;
+        }
+        .back{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background: rgba(18, 20, 18, 0.785);
+            color: rgb(252, 252, 255);
+            transform: rotateY(180deg);
+        }
+        .front1{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+           background-image: url('./MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@.webp');
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: 336px 420px;
+        }
+        .back2{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background: rgba(15, 15, 6, 0.878);
+            color: rgb(243, 243, 248);
+            transform: rotateY(180deg);
+        }
+        .b1:hover{
+transform: rotateY(180deg);
+        }
+        .b2:hover{
+            transform: rotateY(180deg);
+                    }
+                    p{
+                        font-size: 17px;
+                        margin-left: 7px;
+                    }
+    </style>
+</head>
+<body>
+    
+    <section>
+<div class="box">
+    <div class="b1">
+        <div class="front">
+
+        </div>
+        <div class="back">
+            <center><h1><u>IRON MAN-2</u></h1></center>
+            <p>With the world now aware that he is Iron Man, billionaire inventor Tony Stark (Robert Downey Jr.) faces pressure from all sides to share his technology with the military. He is reluctant to divulge the secrets of his armored suit, fearing the information will fall into the wrong hands. With Pepper Potts (Gwyneth Paltrow) and "Rhodey" Rhodes (Don Cheadle) by his side, Tony must forge new alliances and confront a powerful new enemy.</p>
+        </div>
+    </div>
+    <div class="b2">
+        <div class="front1">front</div>
+        <div class="back2">
+            <center><h1><u>Avengers infinity war</u></h1></center>
+            <p>Iron Man, Thor, the Hulk and the rest of the Avengers unite to battle their most powerful enemy yet -- the evil Thanos. On a mission to collect all six Infinity Stones, Thanos plans to use the artifacts to inflict his twisted will on reality. The fate of the planet and existence itself has never been more uncertain as everything the Avengers have fought for has led up to this moment.</p>
+        </div>
+    </div>
+  
+</div>
+    </section>
+</body>
+</html>
